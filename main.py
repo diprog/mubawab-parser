@@ -86,7 +86,7 @@ async def main():
             for adv in advs:
                 coros.append(client.parse_new_adv(adv, semaphore, pbar))
 
-        coros = coros[:10]
+        coros = coros
         pbar.total = len(coros)
         print('\nПолучаю информацию со всех объявлений сайта...')
         all_advs = await asyncio.wait_for(asyncio.gather(*coros), timeout=None)
