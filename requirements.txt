@@ -1,0 +1,5 @@
+aiohttp==3.8.4
+aiohttp_retry==2.8.3
+lxml==4.9.2
+pyppeteer==1.0.2
+tqdm==4.64.1
